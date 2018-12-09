@@ -31,3 +31,13 @@ function mouseOut() {
   document.getElementById("square6").style.height = "15px";
   document.getElementById("square8").style.height = "15px";
 }
+
+function submitGood() { 
+  var input = document.getElementById("goodList").value;
+  document.getElementById("good1").innerHTML = "<i class=\"fa fa-circle-o-notch\" id=\"bullet\" aria-hidden=\"true\"></i>  " + input;
+}
+
+function submitImprove() {
+  var input = document.getElementById("improveList").value;
+  document.getElementById("improve1").innerHTML = "<i class=\"fa fa-circle-o-notch\" id=\"bullet\" aria-hidden=\"true\"></i>  " + input;
+}

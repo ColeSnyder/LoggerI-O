@@ -7,16 +7,17 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" type="text/css" media="screen" href="Logger.css" />
+    <link rel="icon" href="L.png">
 </head>
 <body>
         <div id="logo">
                 <h1><span class="light">Logger I</span><span class="dark">/</span><span class="light">O</span></h1> 
         </div>
 
-        <div id="wrapper">
-            </div>
-            <div id="button">
+        <div id="wrapper"></div>
+        <div id="button">
             <div class="square" id="square1"></div>
             <div class="square" id="square2"></div>
             <div class="square" id="square1"></div>
@@ -28,19 +29,37 @@
             <div class="square" id="square1"></div>
         </div>
 
+        <i class="fa fa-question" id="question" aria-hidden="true"></i>
+
         <div class="grid">
                 <div id="in">
                         <div class="header">
                                 <h2>Done Well</h2>
                                 <input type="text" id="goodList" placeholder="Enter Items">
+                                <button id="goodButton" onclick="submitGood()">SUBMIT</button>
                                 <hr>
+                                <div id="goodOutput">
+                                        <p class="output" id="good1"></p>
+                                        <p class="output" id="good2"></p>
+                                        <p class="output" id="good3"></p>
+                                        <p class="output" id="good4"></p>
+                                        <p class="output" id="good5"></p>
+                                </div>
                         </div>
                 </div>
                 <div id="out">
                         <div class="header">
                                 <h2>Needs Work</h2>
                                 <input type="text" id="improveList" placeholder="Enter Items">
+                                <button id="improveButton" onclick="submitImprove()">SUBMIT</button>
                                 <hr>
+                                <div id="improveOutput">
+                                        <p class="output" id="improve1"></p>
+                                        <p class="output" id="improve2"></p>
+                                        <p class="output" id="improve3"></p>
+                                        <p class="output" id="improve4"></p>
+                                        <p class="output" id="improve5"></p>
+                                </div>
                         </div>
                 </div>
         </div>
