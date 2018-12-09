@@ -1,10 +1,10 @@
 document.getElementById("wrapper").onmouseover = function() {mouseOver()};
 
 function mouseOver() {
-  document.getElementById("square2").style.backgroundColor = "white";
-  document.getElementById("square4").style.backgroundColor = "white";
-  document.getElementById("square6").style.backgroundColor = "white";
-  document.getElementById("square8").style.backgroundColor = "white";
+  document.getElementById("square2").style.backgroundColor = "#dbdbdb";
+  document.getElementById("square4").style.backgroundColor = "#dbdbdb";
+  document.getElementById("square6").style.backgroundColor = "#dbdbdb";
+  document.getElementById("square8").style.backgroundColor = "#dbdbdb";
   document.getElementById("square2").style.borderBottom = "2px solid black";
   document.getElementById("square4").style.borderBottom = "2px solid black";
   document.getElementById("square6").style.borderBottom = "2px solid black";

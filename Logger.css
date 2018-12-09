@@ -79,6 +79,9 @@ h1:active span.dark{
 .grid {
     display: grid;
     grid-column-gap: 25px;
+    grid-template-columns: auto auto;
+    margin-top: 7%;
+    text-align: center;
 }
 
 #button {
@@ -132,3 +135,30 @@ h1:active span.dark{
 }
 
 /************************************* CONTENT *********************************************/
+
+.header {
+    width: 100%;
+}
+
+h2 {
+    color: #FEFEFE;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 2em;
+    margin-bottom: 0%;
+}
+
+input {
+    background-color: #68ffcf;
+    border: none;
+    border-bottom: 2px solid white;
+    width: 50%;
+    height: 30px;
+}
+
+input:focus {
+    outline: none;
+}
+
+hr {
+    width: 90%;
+}
