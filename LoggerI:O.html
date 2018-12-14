@@ -29,16 +29,18 @@
             <div class="square" id="square1"></div>
         </div>
 
-        <i class="fa fa-question" id="question" aria-hidden="true"></i>
+        <a href="./AboutLoggerI:O.html"><i class="fa fa-question" id="question" aria-hidden="true"></i></a>
+        <a href="./LoggerI:O.html"><i class="fa fa-home" id="home" aria-hidden="true"></i></a>
 
         <div class="grid">
                 <div id="in">
                         <div class="header">
                                 <h2>Done Well</h2>
                                 <input type="text" id="goodList" placeholder="Enter Items">
-                                <button id="goodButton" onclick="submitGood()">SUBMIT</button>
+                                <button type="button" id="goodButton" onclick="submitGood()">ADD ITEM</button>
                                 <hr>
                                 <div id="goodOutput">
+                                        <p class="output" id="good0"></p>
                                         <p class="output" id="good1"></p>
                                         <p class="output" id="good2"></p>
                                         <p class="output" id="good3"></p>
@@ -51,9 +53,10 @@
                         <div class="header">
                                 <h2>Needs Work</h2>
                                 <input type="text" id="improveList" placeholder="Enter Items">
-                                <button id="improveButton" onclick="submitImprove()">SUBMIT</button>
+                                <button type="button" id="improveButton" onclick="submitImprove()">ADD ITEM</button>
                                 <hr>
                                 <div id="improveOutput">
+                                        <p class="output" id="improve0"></p>
                                         <p class="output" id="improve1"></p>
                                         <p class="output" id="improve2"></p>
                                         <p class="output" id="improve3"></p>

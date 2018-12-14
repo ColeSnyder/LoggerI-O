@@ -1,3 +1,6 @@
+var goodCounter = 0;
+var improveCounter = 0;
+
 document.getElementById("wrapper").onmouseover = function() {mouseOver()};
 
 function mouseOver() {
@@ -34,10 +37,34 @@ function mouseOut() {
 
 function submitGood() { 
   var input = document.getElementById("goodList").value;
-  document.getElementById("good1").innerHTML = "<i class=\"fa fa-circle-o-notch\" id=\"bullet\" aria-hidden=\"true\"></i>  " + input;
+  if(input != ""){
+    document.getElementById("good"+goodCounter).innerHTML = "<i class=\"fa fa-circle-o-notch\" id=\"bullet\" aria-hidden=\"true\"></i>  " + input + "<i id=\"exit0\" class=\"fa fa-times-circle\"></i> <i id=\"edit0\" class=\"fa fa-edit\"></i>";
+    document.getElementById("goodList").value = "";
+    document.getElementById("goodList").focus();
+    goodCounter++;
+  }
 }
 
 function submitImprove() {
   var input = document.getElementById("improveList").value;
-  document.getElementById("improve1").innerHTML = "<i class=\"fa fa-circle-o-notch\" id=\"bullet\" aria-hidden=\"true\"></i>  " + input;
+  if(input != ""){
+    document.getElementById("improve"+improveCounter).innerHTML = "<i class=\"fa fa-circle-o-notch\" id=\"bullet\" aria-hidden=\"true\"></i>  " + input;
+    document.getElementById("improveList").value = "";
+    document.getElementById("improveList").focus();
+    improveCounter++;
+  }
+}
+
+document.getElementById("good0").onmouseover = function() {addElements()};
+
+function addElements() {
+    document.getElementById("exit0").style.visibility = "visible";
+    document.getElementById("edit0").style.visibility = "visible";
+}
+
+document.getElementById("good0").onmouseout = function() {takeElements()};
+
+function takeElements() {
+    document.getElementById("exit0").style.visibility = "hidden";
+    document.getElementById("edit0").style.visibility = "hidden";
 }

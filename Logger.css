@@ -127,6 +127,19 @@ h1:active span.dark{
     color: #dbdbdb
   }
 
+  #home {
+    font-size: 5em;
+    color: grey;
+    position: absolute;
+    top: 17px;
+    left: 100px;
+    cursor: pointer;
+  }
+
+  #home:hover {
+    color: #dbdbdb
+  }
+
 /****************************************** AFTER HEADER *****************************************/
 
 #bottomSlide {
@@ -156,7 +169,7 @@ h1:active span.dark{
 }
 
 h2 {
-    color: grey;
+    color: #595959;
     font-family: 'Open Sans', sans-serif;
     font-size: 2em;
     margin-bottom: 0%;
@@ -169,7 +182,7 @@ input {
     border-bottom: 2px solid white;
     width: 50%;
     height: 30px;
-    color: grey;
+    color: #595959;
 }
 
 input:focus {
@@ -178,17 +191,19 @@ input:focus {
 
 .output {
     text-align: left;
-    color: grey;
+    color: #595959;
     font-family: 'Open Sans', sans-serif;
     font-size: 1.5em;
 }
 
 #goodOutput {
     margin-left: 5%;
+    padding-right: 10%;
 }
 
 #improveOutput {
     margin-left: 5%;
+    padding-right: 5%;
 }
 
 hr {
@@ -210,4 +225,39 @@ hr {
 #bullet {
     font-size: .4em;
     margin-top: -20px;
+}
+
+/******************************************* ABOUT LOGGER PAGE CSS ****************************************************/
+
+#AboutLogger {
+width: 300px;
+margin: auto;
+margin-top: 10%;
+}
+
+#loggerMain {
+    margin-left: 10%;
+    margin-right: 10%;
+    font-size: 1.5em;
+    font-family: 'Open Sans', sans-serif;
+    color: #595959;
+}
+
+#exit0 { 
+    visibility: hidden;
+    float: right;
+}
+
+#edit0 { 
+    visibility: hidden;
+    float: right;
+    margin-right: 5px;
+}
+
+#exit0:hover {
+    cursor: pointer;
+}
+
+#edit0:hover {
+    cursor: pointer;
 }
