@@ -201,9 +201,18 @@ input:focus {
     padding-right: 10%;
 }
 
+#goodButton {
+    font-size: 1.5em;
+    color: #595959;
+}
+
+#goodButton:hover {
+    cursor: pointer;
+}
+
 #improveOutput {
     margin-left: 5%;
-    padding-right: 5%;
+    padding-right: 10%;
 }
 
 hr {
@@ -214,11 +223,11 @@ hr {
     height: 2px;
 }
 
-#goodList {
+#goodItem {
     font-size: 1em;
 }
 
-#improveList {
+#improveItem {
     font-size: 1em;
 }
 
@@ -243,21 +252,29 @@ margin-top: 10%;
     color: #595959;
 }
 
-#exit0 { 
+.exitIcon {
     visibility: hidden;
     float: right;
 }
 
-#edit0 { 
+.editIcon {
     visibility: hidden;
     float: right;
     margin-right: 5px;
 }
 
-#exit0:hover {
+.exitIcon:hover {
     cursor: pointer;
 }
 
-#edit0:hover {
+.editIcon:hover {
+    cursor: pointer;
+}
+
+#exitImprove0:hover {
+    cursor: pointer;
+}
+
+#editImprove0:hover {
     cursor: pointer;
 }
