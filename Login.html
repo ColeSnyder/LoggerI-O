@@ -3,22 +3,22 @@
 <head>
     <meta charset="utf-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>Logger I/O</title>
+    <title>Login</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <script src="https://www.gstatic.com/firebasejs/5.7.0/firebase.js"></script>
     <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" type="text/css" media="screen" href="Logger.css" />
-    <link rel="icon" href="L.png">
+    <link rel="icon" href="Photos/L.png">
 </head>
 <body>
         <div id="logo">
                 <h1><span class="light">Logger I</span><span class="dark">/</span><span class="light">O</span></h1> 
         </div>
 
-        <div id="wrapper"></div>
-        <div id="button">
+        <!-- <div id="wrapper"></div> -->
+            <!-- <div id="button">
             <div class="square" id="square1"></div>
             <div class="square" id="square2"></div>
             <div class="square" id="square1"></div>
@@ -31,20 +31,19 @@
         </div>
 
         <a href="./AboutLoggerI:O.html"><i class="fa fa-question" id="question" aria-hidden="true"></i></a>
-        <a href="./LoggerI:O.html"><i class="fa fa-home" id="home" aria-hidden="true"></i></a>
+        <a href="./LoggerI:O.html"><i class="fa fa-home" id="home" aria-hidden="true"></i></a>   -->
 
-        <div id="AboutLogger"><h2>About LoggerI/O</h2></div>
-
-        <p id="loggerMain">
-            "LoggerI/O is a daily reflection application tool that helps to better the lives of its users through 
-            circadian comtemplation. It works by allowing our users to log a daily activities into one of two 
-            categories: 'Good' or 'Improve'. By doing this they are forced to think about their daily choices
-            and pick out the positives and negatives. "
-        </p>
+        <div id="modal">
+            <p>LOGIN</p>
+            <input type="text" id="usernameInput" placeholder="Username">
+            <input type="password" id="passwordInput" placeholder="Password">
+            <input type="button" id="pressToLogin" value="LOGIN">
+            <a href="SignUp.html"><input type="button" id="linkToSignUp" value="SIGN UP"></a>
+        </div>
 
 
         <hr id="bottomSlide">
-<script src="Logger.js"></script>
+<!-- <script src="Logger.js"></script> -->
 <script src="dbconnect.js"></script>
 </body>
 </html>

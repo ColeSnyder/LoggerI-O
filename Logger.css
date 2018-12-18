@@ -73,7 +73,7 @@ h1:active span.dark{
 #logo {
     position: absolute;
     margin-left:30%;
-    margin-top: -25px;
+    margin-top: -13%;
 }
 
 .grid {
@@ -165,7 +165,7 @@ h1:active span.dark{
 /************************************* CONTENT *********************************************/
 
 .header {
-    width: 100%;
+    width: 600px; /* NEED TO CHANGE THIS FURTHER IN APPS DEVELOPMENT SO IT CAN BE MOBILE FRIENDLY */
 }
 
 h2 {
@@ -278,3 +278,160 @@ margin-top: 10%;
 #editImprove0:hover {
     cursor: pointer;
 }
+
+/**************************************** LOGIN STUFF ********************************************************/
+
+#modal {
+    width: 300px;
+    height: 350px;
+    margin: auto;
+    border-radius: 2.5px;
+    margin-top: 15%;
+    background-color: #FEFEFE;
+    font-family: 'Open Sans', sans-serif;
+    text-align: center;
+    padding-top: .25%;
+    font-size: 2em;
+    color: #595959;
+}
+
+#pressToLoginX {
+    cursor: default;
+    opacity: .4;
+}
+
+#pressToLogin {
+    cursor: pointer;
+}
+
+#linkToSignUp {
+    cursor: pointer;
+}
+
+#SignUpAttempt {
+    cursor: pointer;
+}
+
+/************************************************* PARALLAX INDEX INFO **************************************************/
+
+.container {
+    max-width: 100%;
+    margin: 0 auto;
+    background: transparent;
+    font-size: 24px;
+}
+
+.logo {
+    height: 670px;
+    background-color: #68ffcf;
+    text-align: center;
+    align-content: center;
+    padding-left: 8%;
+    padding-right: 8%;
+}
+
+.parallax {
+    height: 450px;
+    background: url("Photos/notebook.jpg") no-repeat center;
+    background-size: cover;
+    background-attachment: fixed;
+    padding-top: 15%;
+    z-index: 2;
+}
+
+.loginOptions {
+    height: 600px;
+    background-color: #68ffcf;
+}
+
+header {
+    width: 100%;
+    height: 80px;
+    background-color: black;
+    border-bottom: 3px solid #fc9300;
+    color: white;
+    float: right;
+    /* display: inline; */
+}
+
+.info {
+    z-index: 2;
+    position: relative;
+}
+
+.buttonArea {
+    width: 100%;
+    text-align: center;
+    margin-top: 0%;
+    background: transparent;
+}
+
+#login {
+    width: 150px;
+    height: 50px;
+    font-size: 24px;
+    font-family: 'Open Sans', sans-serif;
+    cursor: pointer;
+    border-radius: 2px;
+    background-color: #68ffcf;
+    color: #595959;
+} 
+
+#signup {
+    width: 150px;
+    height: 50px;
+    font-size: 24px;
+    font-family: 'Open Sans', sans-serif;
+    cursor: pointer;
+    border-radius: 2px;
+    background-color: #68ffcf;
+    color: #595959;
+}
+
+#login:hover {
+    opacity: .7;
+}
+
+#signup:hover {
+    opacity: .7;
+}
+
+.paralaxButton {
+    margin-left: 1%;
+    margin-right: 1%;
+}
+
+.text {
+    font-family: 'Open Sans', sans-serif;
+    color: #FEFEFE;
+    font-size: 32px;
+    text-shadow: 1px 1px 1px #595959;
+}
+
+.userHeader {
+    text-decoration: none;
+    float:right;
+    margin-top: 20px;
+    margin-right: 15px;
+    font-size: 32px;
+    cursor: pointer;
+    color: white;
+}
+
+#indexIconHighlightLogin:hover {
+    color: #fc9300;
+}
+
+#indexIconHighlightSignUp:hover {
+    color: #fc9300;
+}
+
+#indexIconHighlightHelp:hover {
+    color: #fc9300;
+}
+
+#logoIndex {
+    /* position: absolute; */
+    /* margin-left: 30%; */
+}
+
