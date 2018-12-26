@@ -76,6 +76,12 @@ h1:active span.dark{
     margin-top: -13%;
 }
 
+#logoHelp {
+    position: absolute;
+    margin-left: 30%;
+    margin-top: -13%;
+}
+
 .grid {
     display: grid;
     grid-column-gap: 25px;
@@ -236,20 +242,23 @@ hr {
     margin-top: -20px;
 }
 
-/******************************************* ABOUT LOGGER PAGE CSS ****************************************************/
+/********************************************** ABOUT LOGGER PAGE CSS *****************************************************/
 
 #AboutLogger {
 width: 300px;
 margin: auto;
 margin-top: 10%;
+color: #777777;
 }
 
 #loggerMain {
     margin-left: 10%;
     margin-right: 10%;
-    font-size: 1.5em;
+    margin-top: 15%;
+    color: white;
     font-family: 'Open Sans', sans-serif;
-    color: #595959;
+    font-size: 32px;
+    /* text-shadow: 1px 1px 0px #595959; */
 }
 
 .exitIcon {
@@ -322,7 +331,7 @@ margin-top: 10%;
 }
 
 .logo {
-    height: 670px;
+    height: 685px;
     background-color: #68ffcf;
     text-align: center;
     align-content: center;
@@ -331,7 +340,7 @@ margin-top: 10%;
 }
 
 .parallax {
-    height: 450px;
+    height: 495px;
     background: url("Photos/notebook.jpg") no-repeat center;
     background-size: cover;
     background-attachment: fixed;
@@ -340,7 +349,7 @@ margin-top: 10%;
 }
 
 .loginOptions {
-    height: 600px;
+    height: 675px;
     background-color: #68ffcf;
 }
 
@@ -373,7 +382,7 @@ header {
     font-family: 'Open Sans', sans-serif;
     cursor: pointer;
     border-radius: 2px;
-    background-color: #68ffcf;
+    background-color: white;
     color: #595959;
 } 
 
@@ -384,16 +393,16 @@ header {
     font-family: 'Open Sans', sans-serif;
     cursor: pointer;
     border-radius: 2px;
-    background-color: #68ffcf;
+    background-color: white;
     color: #595959;
 }
 
 #login:hover {
-    opacity: .7;
+    border-bottom: 3px solid #fc9300;
 }
 
 #signup:hover {
-    opacity: .7;
+    border-bottom: 3px solid #fc9300;
 }
 
 .paralaxButton {
@@ -405,7 +414,7 @@ header {
     font-family: 'Open Sans', sans-serif;
     color: #FEFEFE;
     font-size: 32px;
-    text-shadow: 1px 1px 1px #595959;
+    text-shadow: 1px 2px 2px #595959;
 }
 
 .userHeader {
@@ -430,8 +439,15 @@ header {
     color: #fc9300;
 }
 
-#logoIndex {
-    /* position: absolute; */
-    /* margin-left: 30%; */
+#topL {
+    font-family: 'Signika', sans-serif;
+    float: left;
+    margin-left: 30px;
+    font-size: 40px;
+    margin-top: 15px;
+}
+
+#slash {
+    color: #fc9300;
 }
 
