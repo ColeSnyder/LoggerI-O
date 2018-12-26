@@ -16,7 +16,9 @@
     const loginAttempt = document.getElementById("pressToLogin");
     const signupAttempt = document.getElementById("SignUpAttempt");
 
-    if (loginAttempt) {
+// LOGIN ATTEMPT******************************************************************************************************
+
+    if(loginAttempt) {
         loginAttempt.addEventListener('click', e => {
 
             const user = usernameInput.value;
@@ -26,11 +28,13 @@
 
             const promise = auth.signInWithEmailAndPassword(user, pass);
 
-            promise.catch(e => console.log(e.message))
+            promise.catch(e => console.log(e.message));
         });
     }
 
-    if (signupAttempt) {
+// SIGN UP ATTEMPT****************************************************************************************************
+
+    if(signupAttempt){
         signupAttempt.addEventListener('click', e => {
 
             const user = usernameInput.value;
@@ -40,16 +44,21 @@
 
             const promise = auth.createUserWithEmailAndPassword(user, pass);
 
-            promise.catch(e => console.log(e.message))
+            promise.catch(e => console.log(e.message));
         });
     }
+
+// REAL TIME LISTENER*************************************************************************************************
 
     firebase.auth().onAuthStateChanged(firebaseUser => {
         if (firebaseUser) {
             console.log(firebaseUser);
+            window.location = './LoggerI:O.html';
         } else {
             console.log("not logged in");
         }
     });
 
+
+    
 }());

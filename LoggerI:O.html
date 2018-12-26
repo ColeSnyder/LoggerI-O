@@ -10,29 +10,22 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" type="text/css" media="screen" href="Logger.css" />
-    <link rel="icon" href="L.png">
+    <link rel="icon" href="photos/L.png">
 </head>
 <body>
-        <div id="logo">
+        <header id="headerMain">
+                <p id="topL">LOGGER I<span id="slash">/</span>O</p>
+                <a href="./AboutLoggerI:O.html"><i id="indexIconHighlightHelp" class="fa fa-question userHeader" aria-hidden="true"
+                        title="Help"></i></a>
+                <a href="SignUp.html"><i id="indexIconHighlightLogin" class="fa fa-user-plus userHeader" title="Sign Up"></i></a>
+                <a href="Login.html"><i id="indexIconHighlightSignUp" class="fa fa-user userHeader" title="Login"></i></a>
+        </header>
+        
+        <!-- <div id="logo">
                 <h1><span class="light">Logger I</span><span class="dark">/</span><span class="light">O</span></h1> 
-        </div>
+        </div> -->
 
         <div id="wrapper"></div>
-        <div id="button">
-            <div class="square" id="square1"></div>
-            <div class="square" id="square2"></div>
-            <div class="square" id="square1"></div>
-            <div class="square" id="square4"></div>
-            <div class="square" id="square1"></div>
-            <div class="square" id="square6"></div>
-            <div class="square" id="square1"></div>
-            <div class="square" id="square8"></div>
-            <div class="square" id="square1"></div>
-        </div>
-
-        <a href="./AboutLoggerI:O.html"><i class="fa fa-question" id="question" aria-hidden="true"></i></a>
-        <a href="./LoggerI:O.html"><i class="fa fa-home" id="home" aria-hidden="true"></i></a>
-
         <div class="grid">
                 <div id="in">
                         <div class="header">
@@ -69,6 +62,6 @@
         </div>
         <hr id="bottomSlide">
 <script src="Logger.js"></script>
-<script src="dbconnect.js"></script>
+<!-- <script src="dbconnect.js"></script> -->
 </body>
 </html>

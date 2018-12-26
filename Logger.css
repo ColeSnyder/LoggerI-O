@@ -254,11 +254,11 @@ color: #777777;
 #loggerMain {
     margin-left: 10%;
     margin-right: 10%;
-    margin-top: 15%;
-    color: white;
+    margin-top: 5%;
     font-family: 'Open Sans', sans-serif;
     font-size: 32px;
-    /* text-shadow: 1px 1px 0px #595959; */
+    color: #FEFEFE;
+    text-shadow: 1px 2px 2px #595959;
 }
 
 .exitIcon {
@@ -340,7 +340,7 @@ color: #777777;
 }
 
 .parallax {
-    height: 495px;
+    height: 445px;
     background: url("Photos/notebook.jpg") no-repeat center;
     background-size: cover;
     background-attachment: fixed;
@@ -349,7 +349,7 @@ color: #777777;
 }
 
 .loginOptions {
-    height: 675px;
+    height: 605px;
     background-color: #68ffcf;
 }
 
@@ -359,8 +359,11 @@ header {
     background-color: black;
     border-bottom: 3px solid #fc9300;
     color: white;
-    float: right;
-    /* display: inline; */
+    position: fixed;
+}
+
+#headerMain {
+    margin-top: -7%;
 }
 
 .info {
