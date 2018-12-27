@@ -49,7 +49,7 @@
     }
 
 // REAL TIME LISTENER*************************************************************************************************
-
+    
     firebase.auth().onAuthStateChanged(firebaseUser => {
         if (firebaseUser) {
             console.log(firebaseUser);
@@ -58,6 +58,8 @@
             console.log("not logged in");
         }
     });
+
+
 
 
     
