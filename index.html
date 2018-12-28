@@ -1,57 +1,59 @@
 <!DOCTYPE html>
 <html>
+    <head>
+        <meta charset="utf-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Logger I/O</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <script src="https://www.gstatic.com/firebasejs/5.7.0/firebase.js"></script>
+        <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link rel="stylesheet" type="text/css" media="screen" href="Logger.css" />
+        <link rel="icon" href="Photos/L.png">
+    </head>
 
-<head>
-    <meta charset="utf-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>Logger I/O</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <script src="https://www.gstatic.com/firebasejs/5.7.0/firebase.js"></script>
-    <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
-    <link rel="stylesheet" type="text/css" media="screen" href="Logger.css" />
-    <link rel="icon" href="Photos/L.png">
-</head>
+    <body>
+        <header>
+            <p id="topL">LOGGER I<span id="slash">/</span>O</p>
+            <a href="./AboutLoggerI:O.html"><i id="indexIconHighlightHelp" class="fa fa-question userHeader" aria-hidden="true"
+                    title="Help"></i></a>
+            <a href="SignUp.html"><i id="indexIconHighlightLogin" class="fa fa-user-plus userHeader" title="Sign Up"></i></a>
+            <a href="Login.html"><i id="indexIconHighlightSignUp" class="fa fa-user userHeader" title="Login"></i></a>
+        </header>
 
-<body>
-    <header>
-        <p id="topL">LOGGER I<span id="slash">/</span>O</p>
-        <a href="./AboutLoggerI:O.html"><i id="indexIconHighlightHelp" class="fa fa-question userHeader" aria-hidden="true"
-                title="Help"></i></a>
-        <a href="SignUp.html"><i id="indexIconHighlightLogin" class="fa fa-user-plus userHeader" title="Sign Up"></i></a>
-        <a href="Login.html"><i id="indexIconHighlightSignUp" class="fa fa-user userHeader" title="Login"></i></a>
-    </header>
+                <div class="container">
+                    <div class="logo">
+                        <br><br><br>
+                        <div id="logoIndex">
+                            <h1><span class="light">Logger I</span><span class="dark">/</span><span class="light">O</span></h1>
+                        </div>
+                        <br>
+                        <p class="text">
+                            Logger I/O is the next big thing in personal wellness. Logging daily activities has been proven
+                            to help users stay more organized and reflective. </p>
+                        <p class="text">
+                            Start logging your daily activities today and start seeing results!
+                        </p>
+                    </div>
+                    <div class="parallax">
+                        <p class="info">
+                            <div class="buttonArea">
+                                <p class="text">Login to continue your daily reflections, or sign up to begin!</p>
+                                <br><br><br><br>
+                                <a href="Login.html"><button id="login" class="paralaxButton">LOGIN</button></a>
+                                <a href="SignUp.html"><button id="signup" class="paralaxButton">SIGN UP</button></a>
+                            </div>
+                        </p>
+                    </div>
+                    <div class="loginOptions">
 
-    <div class="container">
-        <div class="logo">
-            <br><br><br>
-            <div id="logoIndex">
-                <h1><span class="light">Logger I</span><span class="dark">/</span><span class="light">O</span></h1>
-            </div>
-            <br>
-            <p class="text">
-                Logger I/O is the next big thing in personal wellness. Logging daily activities has been proven
-                to help users stay more organized and reflective. </p>
-            <p class="text">
-                Start logging your daily activities today and start seeing results!
-            </p>
-        </div>
-        <div class="parallax">
-            <p class="info">
-                <div class="buttonArea">
-                    <p class="text">Login to continue your daily reflections, or sign up to begin!</p>
-                    <br><br><br><br>
-                    <a href="Login.html"><button id="login" class="paralaxButton">LOGIN</button></a>
-                    <a href="SignUp.html"><button id="signup" class="paralaxButton">SIGN UP</button></a>
+                    </div>
+                    <div class="aboutDeveloper">
+                        <p id="aboutDeveloperText">
+                            Meet the developer, Cole Snyder 
+                        </p>
+                    </div>
                 </div>
-            </p>
-        </div>
-        <div class="loginOptions">
-
-        </div>
-    </div>
-
-    <!-- <script src="dbconnect.js"></script> -->
-</body>
+    </body>
 </html>
