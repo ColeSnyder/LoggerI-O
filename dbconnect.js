@@ -49,7 +49,9 @@
 
                 promise.catch(e => console.log(e.message)); //catch incase the username/password inputs don't authenticate
             } else {
-                alert("Passwords must match. Please try again");
+                document.getElementById("modal").style.height = "400px";
+                document.getElementById("errorSigningUp").style.visibility = "visible";
+                //alert("Passwords must match. Please try again");
             }
         });
     }
@@ -64,11 +66,12 @@
                     window.location = './LoggerI:O.html'; //goes to main logger page if successful
                 } else {
                     //THERE IS CURRENTLY NO USER LOGGED IN
+                    document.getElementById("errorLoggingIn").style.visibility = "visible";
                     console.log("not logged in");
                 }
             });
     }
 
 // NEXT CONTENT GOES HERE************************************************************************************************
-    
+window.onbeforeunload = firebase.auth().signOut();
 }());
