@@ -38,7 +38,6 @@
 
     if(signupAttempt){ //if we don't check for this, it errors out saying it can't be null. just leave it
         signupAttempt.addEventListener('click', e => { //event listener for when the signup button is clicked
-
             const user = usernameInput.value; //grabs value of username input
             const pass = passwordInput.value; //grabs value of password input
             const passDouble = passwordInputDouble.value; //grabs value of re-entry password input
@@ -46,12 +45,11 @@
 
             if (pass == passDouble){ //checking to make sure passwords are the same
                 const promise = auth.createUserWithEmailAndPassword(user, pass); //firebase command for inputting a user based off of the username/password inputs
-
                 promise.catch(e => console.log(e.message)); //catch incase the username/password inputs don't authenticate
+                window.location = './LoggerI:O.html'; //goes to main logger page if successful
             } else {
                 document.getElementById("modal").style.height = "400px";
                 document.getElementById("errorSigningUp").style.visibility = "visible";
-                //alert("Passwords must match. Please try again");
             }
         });
     }

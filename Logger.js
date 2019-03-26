@@ -7,6 +7,7 @@ var isGValue2Empty = true;
 var isGValue3Empty = true;
 var isGValue4Empty = true;
 var isGValue5Empty = true;
+var isGValue6Empty = true;
 
 var isIValue0Empty = true;
 var isIValue1Empty = true;
@@ -14,6 +15,9 @@ var isIValue2Empty = true;
 var isIValue3Empty = true;
 var isIValue4Empty = true;
 var isIValue5Empty = true;
+var isIValue6Empty = true;
+
+var itemID;
 
 // FUN BUTTON STUFF, NOT CURRENTLY IMPLEMENTED ********************************************************************************
 
@@ -86,6 +90,11 @@ function checkGoodList() {
             document.getElementById("goodItem").value = "";
             document.getElementById("goodItem").focus();
             isGValue5Empty = false;
+          } else if (isGValue6Empty) {
+            document.getElementById("good6").innerHTML = "<i class=\"fa fa-circle-o-notch\" id=\"bullet\" aria-hidden=\"true\"></i> " + input + "<i id=\"exit6\" onclick=\"remove(6)\" class=\"exitIcon fa fa-times-circle\"></i> <i id=\"edit6\" class=\"editIcon fa fa-edit\"></i>";
+            document.getElementById("goodItem").value = "";
+            document.getElementById("goodItem").focus();
+            isGValue6Empty = false;
           }
     }
 }
@@ -124,6 +133,11 @@ function checkImproveList() {
             document.getElementById("improveItem").value = "";
             document.getElementById("improveItem").focus();
             isIValue5Empty = false;
+          } else if (isIValue6Empty) {
+            document.getElementById("improve6").innerHTML = "<i class=\"fa fa-circle-o-notch\" id=\"bullet\" aria-hidden=\"true\"></i> " + input + "<i id=\"exitImprove6\" onclick=\"removeImprove(6)\" class=\"exitIcon fa fa-times-circle\"></i> <i id=\"editImprove6\" class=\"editIcon fa fa-edit\"></i>";
+            document.getElementById("improveItem").value = "";
+            document.getElementById("improveItem").focus();
+            isIValue5Empty = false;
           }
     }
 }
@@ -136,6 +150,7 @@ document.getElementById("good2").onmouseover = function() {addElements(2)};
 document.getElementById("good3").onmouseover = function() {addElements(3)};
 document.getElementById("good4").onmouseover = function() {addElements(4)};
 document.getElementById("good5").onmouseover = function() {addElements(5)};
+document.getElementById("good6").onmouseover = function() {addElements(6)};
 
 function addElements(num) {
     document.getElementById("exit"+num).style.visibility = "visible";
@@ -148,6 +163,7 @@ document.getElementById("good2").onmouseout = function() {takeElements(2)};
 document.getElementById("good3").onmouseout = function() {takeElements(3)};
 document.getElementById("good4").onmouseout = function() {takeElements(4)};
 document.getElementById("good5").onmouseout = function() {takeElements(5)};
+document.getElementById("good6").onmouseout = function() {takeElements(6)};
 
 function takeElements(num) {
     document.getElementById("exit"+num).style.visibility = "hidden";
@@ -160,6 +176,7 @@ document.getElementById("improve2").onmouseover = function() {addElementsImprove
 document.getElementById("improve3").onmouseover = function() {addElementsImprove(3)};
 document.getElementById("improve4").onmouseover = function() {addElementsImprove(4)};
 document.getElementById("improve5").onmouseover = function() {addElementsImprove(5)};
+document.getElementById("improve5").onmouseover = function() {addElementsImprove(6)};
 
 function addElementsImprove(num) {
     document.getElementById("exitImprove"+num).style.visibility = "visible";
@@ -172,6 +189,7 @@ document.getElementById("improve2").onmouseout = function() {takeElementsImprove
 document.getElementById("improve3").onmouseout = function() {takeElementsImprove(3)};
 document.getElementById("improve4").onmouseout = function() {takeElementsImprove(4)};
 document.getElementById("improve5").onmouseout = function() {takeElementsImprove(5)};
+document.getElementById("improve5").onmouseout = function() {takeElementsImprove(6)};
 
 function takeElementsImprove(num) {
     document.getElementById("exitImprove"+num).style.visibility = "hidden";
@@ -192,6 +210,8 @@ function remove(num) {
     isGValue4Empty = true;
   } else if (num == 5) {
     isGValue5Empty = true;
+  } else if (num == 6) {
+    isGValue6Empty = true;
   }
 }
 
@@ -209,6 +229,8 @@ function removeImprove(num) {
     isIValue4Empty = true;
   } else if (num == 5) {
     isIValue5Empty = true;
+  } else if (num == 6) {
+    isIValue5Empty = true;
   }
 }
 
@@ -223,3 +245,21 @@ document.getElementById('improveItem').onkeydown = function(event) {
       checkImproveList();
   }
 }
+
+//********************************************* The following deals with input *******************************************
+
+$('body').on('click', '[data-editable]', function(){
+
+ itemID = event.target.id;
+  
+  var $el = $(this);
+              
+  var $input = $('<input class="editInput"/>').val( $el.text() );
+  $el.replaceWith( $input );
+  
+  var save = function(){
+    var $p = $('<p id="' + itemID + '" data-editable class="output"/>').text('<i class=\"fa fa-circle-o-notch\" id=\"bullet\" aria-hidden=\"true\"></i>' + $input.val() );
+    $input.replaceWith( $p );
+  };
+  $input.one('blur', save).focus();
+});

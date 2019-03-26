@@ -211,6 +211,15 @@ input:focus {
     outline: none;
 }
 
+.editInput {
+    text-decoration: none;
+    width: 100%;
+    border: none;
+    font-size: 1.5em;
+    font-family: 'Open Sans', sans-serif;
+    color: #595959;
+}
+
 .output {
     text-align: left;
     color: #595959;
@@ -347,10 +356,12 @@ color: #777777;
 }
 
 .logo {
-    height: 685px;
-    background-color: #68ffcf;
+    height: 690px;
+    /* background-color: #68ffcf; */
+    background-image: url("Photos/cup.jpg");
     text-align: center;
     align-content: center;
+    padding-top: 3%;
     padding-left: 8%;
     padding-right: 8%;
 }
